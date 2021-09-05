@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:39:55 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 08:40:17 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 09:10:17 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,21 +69,21 @@ char	*ft_save(char *save)
 char	*ft_read_and_save(int fd, char *save)
 {
 	char	*buff;
-	int		rd_bytes;
+	int		read_bytes;
 
 	buff = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buff)
 		return (NULL);
-	rd_bytes = 1;
-	while (!ft_strchr(save, '\n') && rd_bytes != 0)
+	read_bytes = 1;
+	while (!ft_strchr(save, '\n') && read_bytes != 0)
 	{
-		rd_bytes = read(fd, buff, BUFFER_SIZE);
-		if (rd_bytes == -1)
+		read_bytes = read(fd, buff, BUFFER_SIZE);
+		if (read_bytes == -1)
 		{
 			free(buff);
 			return (NULL);
 		}
-		buff[rd_bytes] = '\0';
+		buff[read_bytes] = '\0';
 		save = ft_strjoin(save, buff);
 	}
 	free(buff);
@@ -95,8 +95,8 @@ char	*get_next_line(int fd)
 	char		*line;
 	static char	*save;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 256)
-		return (NULL);
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (0;
 	save = ft_read_and_save(fd, save);
 	if (!save)
 		return (NULL);
