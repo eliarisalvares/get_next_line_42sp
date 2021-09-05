@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:39:55 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 09:29:36 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 09:30:54 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,8 @@ char	*ft_save(char *save)
 	c = 0;
 	while (save[i])
 		s[c++] = save[i++];
-	s[c] = '\0';;
+	s[c] = '\0';
+	free(save);
 	return (s);
 }
 
