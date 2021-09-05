@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:43:18 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 10:09:27 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 10:10:27 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		return (NULL);
 	if (s1)
 	{
-		while (s1[++i] !'\0')
+		while (s1[++i] != '\0')
 			str[i] = s1[i];
 	}
 	while (s2 != '\0')
