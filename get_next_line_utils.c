@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:43:18 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 10:20:36 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 10:24:36 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 	i = 0;
-	j = 0;
+	c = 0;
 	if(s1)
 	{
 		while (s1[++i] != '\0')
