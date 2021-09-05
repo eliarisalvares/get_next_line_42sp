@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:43:18 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 10:24:36 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 10:27:06 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strchr(char *s, int c)
 char	*ft_strjoin(char *s1, char *s2)
 {
 	size_t	i;
-	size_t c;
+	size_t	c;
 	char	*str;
 
 	if (!s1)
@@ -59,7 +59,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	str = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	i = 0;
+	i = -1;
 	c = 0;
 	if(s1)
 	{
