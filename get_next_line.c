@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:39:55 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 09:10:17 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 09:18:07 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ char	*get_next_line(int fd)
 	static char	*save;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
-		return (0;
+		return (0);
 	save = ft_read_and_save(fd, save);
 	if (!save)
 		return (NULL);
