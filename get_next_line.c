@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:39:55 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 09:28:28 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 09:29:11 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,8 @@ char	*ft_read_and_save(int fd, char *save)
 		}
 		buff[read_bytes] = '\0';
 		save = ft_strjoin(save, buff);
-	};
+	}
+	free(buff);
 	return (save);
 }
 
