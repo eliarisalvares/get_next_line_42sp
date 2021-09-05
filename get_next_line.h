@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:55:11 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/03 14:27:47 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 08:42:10 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ size_t			ft_strlen(const char *str);
  * NULL if the character is not found. The terminating null byte is considered
  * part of the string.
  */
-char			*ft_strchr(const char *s, int c);
+char			*ft_strchr(char *s, int c);
 
 /**
  * @brief Allocates (with malloc) and returns a new string, which is the result
@@ -44,7 +44,7 @@ char			*ft_strchr(const char *s, int c);
  * @param s2 the suffix string.
  * @return char* the new string. NULL if the allocation fails
  */
-char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_strjoin(char *s1, char const *s2);
 
 /**
  * @brief Reads a file from a file descriptor
@@ -57,6 +57,6 @@ char			*get_next_line(int fd);
 
 char	*ft_get_line(char *save);
 char	*ft_save(char *save);
-char	*ft_read_and_save(int fd, char *save)
+char	*ft_read_and_save(int fd, char *save);
 
 #endif

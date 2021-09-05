@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:39:55 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/03 16:13:17 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 08:40:17 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,16 +54,16 @@ char	*ft_save(char *save)
 		free(save);
 		return (NULL);
 	}
-	str = (char *)malloc(sizeof(char) * (ft_strlen(save) - i + 1));
+	s = (char *)malloc(sizeof(char) * (ft_strlen(save) - i + 1));
 	if (!s)
 		return (NULL);
 	i++;
 	c = 0;
 	while (save[i])
-		str[j++] = save[i++];
+		s[c++] = save[i++];
 	s[c] = '\0';
 	free(save);
-	return (str);
+	return (s);
 }
 
 char	*ft_read_and_save(int fd, char *save)
@@ -97,10 +97,10 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 256)
 		return (NULL);
-	left_str = ft_read_and_save(fd, save);
+	save = ft_read_and_save(fd, save);
 	if (!save)
 		return (NULL);
-	line = ft_get_line(left_str);
-	left_str = ft_save(save);
+	line = ft_get_line(save);
+	save = ft_save(save);
 	return (line);
 }
