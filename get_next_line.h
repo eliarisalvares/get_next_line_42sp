@@ -28,45 +28,13 @@ size_t			ft_strlen(const char *str);
 /**
  * @brief searches for first occurrence of "c" in the string *str
  *
- * @param str the string
+ * @param s the string
  * @param c character to be checked
  * @return char*, a pointer to the first occurrence of character c in *str or
  * NULL if the character is not found. The terminating null byte is considered
  * part of the string.
  */
-char			*ft_strchr(const char *str, int c);
-
-/**
- * @brief  copies up to size - 1 characters from the NUL-terminated string src
- * to dst, NUL-terminating the result.
- *
- * @param dest destination string
- * @param src source string
- * @param size (dest) nothing will be written beyond dest + size - 1.
- * @return size_t, the total length of the string it tried to create (entire
- * source string)
- */
-size_t			ft_strlcpy(char *dest, const char *src, size_t size);
-
-/**
- * @brief returns a pointer to a new string duplicated of the string s. Memory
- *for the new string is obtained with malloc
- *
- * @param s1 the string which will be duplicated
- * @return char*, a pointer to the new string
- */
-char			*ft_strdup(const char *s1);
-
-/**
- * @brief allocates (with malloc) and returns a substring from the string 's'.
- * The substring begins at index 'start' and is of maximum size ’len’.
- *
- * @param s the string from which to create the substring.
- * @param start the start index of the substring in the string 's'.
- * @param len the maximum length of the substring.
- * @return char*, the substring. NULL if the allocation fails.
- */
-char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_strchr(const char *s, int c);
 
 /**
  * @brief Allocates (with malloc) and returns a new string, which is the result
@@ -86,5 +54,9 @@ char			*ft_strjoin(char const *s1, char const *s2);
  * read or error
  */
 char			*get_next_line(int fd);
+
+char	*ft_get_line(char *save);
+char	*ft_save(char *save);
+char	*ft_read_and_save(int fd, char *save)
 
 #endif
