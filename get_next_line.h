@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 10:55:11 by elraira-          #+#    #+#             */
-/*   Updated: 2021/09/05 08:42:10 by elraira-         ###   ########.fr       */
+/*   Updated: 2021/09/05 09:19:27 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
  * @param str this is the string whose length is to be found.
  * @return size_t this function returns the length of string.
  */
-size_t			ft_strlen(const char *str);
+size_t			ft_strlen(char *str);
 
 /**
  * @brief searches for first occurrence of "c" in the string *str
@@ -44,7 +44,7 @@ char			*ft_strchr(char *s, int c);
  * @param s2 the suffix string.
  * @return char* the new string. NULL if the allocation fails
  */
-char			*ft_strjoin(char *s1, char const *s2);
+char			*ft_strjoin(char *s1, char *s2);
 
 /**
  * @brief Reads a file from a file descriptor
