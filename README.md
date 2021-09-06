@@ -18,5 +18,5 @@ Get_next_line is a simple and challenging project which allows you to learn deep
 * Algorithms & AI 
 
 ## Anotações e Fluxo do Projeto
-Neste link há anotações que foram importantes durante meu processo de desenvolvimento do código, mas não foi minuciosamente revisado, assim, pode conter erros.
+Neste link há anotações que foram importantes durante meu processo de desenvolvimento do código, mas o fluxograma não foi minuciosamente revisado, ou seja, podem haver inconsistências.
 * https://miro.com/app/board/o9J_ly1mdHE=/
