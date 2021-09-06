@@ -9,7 +9,7 @@ Get_next_line is a simple and challenging project which allows you to learn deep
 
 ## Grade and Badge 
 ![image](https://user-images.githubusercontent.com/85964972/132257264-f92eb828-0168-46d7-aa10-15a6bf44ef6e.png)
-![vida](https://game.42sp.org.br/static/assets/achievements/get_next_linen.png)
+![image](https://user-images.githubusercontent.com/85964972/132258308-4a7ceea0-b212-4a51-a300-88c9bd1706ef.png)
 
 ## Skills
 * Rigor
