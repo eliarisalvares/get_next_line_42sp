@@ -7,7 +7,8 @@ The goal of this project is to create the function _get_next_line.c_ which, when
 ## Why is get_next_line important?
 Get_next_line is a simple and challenging project which allows you to learn deeply about open(), read() and close() functions as well as static variables and file descriptors.
 
-## Badge 
+## Grade and Badge 
+![image](https://user-images.githubusercontent.com/85964972/132257264-f92eb828-0168-46d7-aa10-15a6bf44ef6e.png)
 ![vida](https://game.42sp.org.br/static/assets/achievements/get_next_linen.png)
 
 ## Skills
