@@ -14,3 +14,10 @@ Get_next_line is a simple and challenging project which allows you to learn deep
 * Rigor
 * Unix
 * Algorithms & AI 
+
+## Personal Annotations and Workflow
+
+* https://miro.com/app/board/o9J_ly1mdHE=/
+
+Disclaimer: 
+I am attaching this to this repository as it can be helpful to new cadets, however these are personal notes and there are inconsistencies here. Feel free to reach me if you need any help with get_next_line :smile:
